@@ -1,0 +1,375 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    }
+      body{
+          font-family: monospace;
+      }
+    nav{
+        background: #0082e6;
+        height: 80px;
+        width: 100%;
+    }
+    label.logo{
+        color: white;
+        font-size: 35opx;
+        line-height: 80px;
+        padding: 0 100px;
+       font-weight: bold;
+    }
+    nav ul{
+        float: right;
+        margin-right: 20px;
+    }
+    nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px
+    }
+    nav ul li a{
+        color: white;
+        font-size: 17px;
+        padding: 7px 13px;
+        border-radius: 3px;
+          text-transform: uppercase;
+    }
+    a.active,a:hover{
+        background: #1b9bff;
+        transition: .5s;
+    }
+    .checkbtn{
+       font-size: 30px;
+       color: white; 
+       float: right;
+       line-height: 80px;
+       margin-right: 40px;
+    cursor: pointer;
+    display: none;
+    }
+    #check{
+       display: none;
+    }
+    @media  (max-width: 952px){
+       label.logo{
+           font-size: 30px;
+           padding-left: 50px;
+    }
+    nav ul li a{
+          font-size: 16px;
+    }
+    
+    }
+    @media  (max-width: 858px){  
+        .checkbtn{  
+    
+            display: block;
+        }
+       ul{  position: fixed;
+           width: 100px;
+           height: 100vh;
+           background:  #2c3e50;
+           top: 80px;
+           left: -100%;
+           text-align: center;
+           transition: all .5s;
+       }
+        nav ul li{
+            display:block;
+            margin: 50px 0;
+            line-height: 30px;
+        
+        }
+        nav ul li a{
+            font-size: 20px;
+        }
+        a:hover,a.active{  
+            background: none;
+            color: #0082e6;
+        }
+        #check:checked ~ ul{
+    left: 0;
+    
+        }
+    
+    } 
+
+.contact
+{
+    position: relative;
+    min-height: 100vh;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: url(pexels1.jpg);
+    background-size: cover;
+}
+.contact .contact 
+{ 
+    max-width: 800px;
+    text-align: center;
+}
+.contact .contact h2
+{
+      font-size: 36px;
+font-weight: 500;
+color: #fff;
+}
+.contact .contact p
+{     
+    font-weight: 300;
+    color: #fff;
+    }
+.container
+{
+    width: 100%;
+    display: flex;
+justify-content: center;
+align-items: center;
+margin-top: 30px;
+}
+.container .contavtInfo
+{
+
+width: 50%;
+display: flex;
+flex-direction: column;
+}
+.container .contavtInfo .box
+{
+    position: relative;
+     padding: 20px 0;
+     display: flex;
+
+}         
+
+.container .contavtInfo .box .icon
+{
+      min-width: 60px;
+     height: 60px;
+     background: #fff;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     border-radius: 50%;
+     font-size: 22px;
+
+}      
+.container .contavtInfo .box  .text
+{
+    display:  flex;
+    margin-left: 20px;
+    font-size: 16px;
+    color: #fff;
+    flex-direction: column;
+    font-weight: 300;
+}
+
+.container .contavtInfo .box .text h3
+{
+    font-weight: 500;
+    color: #00bcd4;
+}
+.contactFrom
+{
+    width: 40%;
+    padding: 40px;
+    background: #fff;
+
+}
+.contactFrom h2
+{
+    font-size: 30px;
+    color: #333;
+    font-weight: 500;
+}
+.contactFrom .inputBox
+{
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+
+}
+.contactFrom .inputBox input
+.contactFrom .inputBox textarea
+{
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid #333;
+    outline: none;
+    resize: none;
+
+
+}
+.contactFrom .inputBox span
+{
+     position: absolute;
+     left: 0;
+     padding: 5px 0;
+     font-size: 16px;
+     margin: 10px 0;
+     pointer-events: none;
+     transition: 0.5s;
+     color: #666;
+
+
+}
+.contactFrom .inputBox input:focus ~ span,
+.contactFrom .inputBox input:valid ~ span, 
+.contactFrom .inputBox textarea:focus ~ span, 
+.contactFrom .inputBox textarea:valid ~ span 
+
+{
+    color: #e91e63;
+    font-size: 12px;
+    transform: translateY(-20px);
+}
+.contactFrom .inputBox input[type="submit"]
+{
+    width: 100px;
+    background: #00bcd4;
+    color: #fff;
+    border: 10px;
+    font-size: 18px;
+}
+
+
+
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'Quicksand', sans-serif;
+}
+
+body{
+	height: 100vh;
+	width: 100%;
+}
+
+.container{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 20px 100px;
+}
+
+.container:after{
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	background: url("pexels2") no-repeat center;
+	background-size: cover;
+	filter: blur(50px);
+	z-index: -1;
+}
+.contact-box{
+	max-width: 850px;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	background-color: #fff;
+	box-shadow: 0px 0px 19px 5px rgba(0,0,0,0.19);
+}
+
+.left{
+	background: url("pexels2.jpg") no-repeat center;
+	background-size: cover;
+	height: 100%;
+}
+.right{
+	padding: 25px 40px;
+}
+
+h2{
+	position: relative;
+	padding: 0 0 10px;
+	margin-bottom: 10px;
+}
+
+h2:after{
+	content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    height: 4px;
+    width: 50px;
+    border-radius: 2px;
+    background-color: #2ecc71;
+}
+
+.field{
+	width: 100%;
+	border: 2px solid rgba(0, 0, 0, 0);
+	outline: none;
+	background-color: rgba(230, 230, 230, 0.6);
+	padding: 0.5rem 1rem;
+	font-size: 1.1rem;
+	margin-bottom: 22px;
+	transition: .3s;
+}
+
+.field:hover{
+	background-color: rgba(0, 0, 0, 0.1);
+}
+
+textarea{
+	min-height: 150px;
+}
+
+.btn{
+	width: 100%;
+	padding: 0.5rem 1rem;
+	background-color: #2ecc71;
+	color: #fff;
+	font-size: 1.1rem;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	transition: .3s;
+}
+
+.btn:hover{
+    background-color: #27ae60;
+}
+
+.field:focus{
+    border: 2px solid rgba(30,85,250,0.47);
+    background-color: #fff;
+}
+
+@media screen and (max-width: 880px){
+	.contact-box{
+		grid-template-columns: 1fr;
+	}
+	.left{
+		height: 200px;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
